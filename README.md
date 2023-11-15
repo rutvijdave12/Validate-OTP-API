@@ -8,3 +8,5 @@ API URL and Request/ response is in request.http file
     "channelId": "LOGIN_MFA", - Pass this channel only.
     "otp": "lsrjXOipsCRBeL8o5JZsLOG4OFcjqWprg4hYzdbKCh4=" - SHA256 hash of the otp string with Base64 encoding should be passed. Use CryptoJS.SHA256(enteredOTP).toString(CryptoJS.enc.Base64) of crypto-js lib in react.
 }
+
+Pass SHA256 with Base64 encoded string of "123123" if user's email has not been whitelisted.
